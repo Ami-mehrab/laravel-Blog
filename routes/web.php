@@ -10,8 +10,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+
 Route::get('/',[homeController::class,'home'])->name('home');
 
+//blogs post route with crud 
+
 Route::get('/blogcreate',[PostController::class,'create'])->name('blogs.create');
-Route::post('/blog/stored',[PostController::class,'store'])->name('blogs.store');
+Route::get('/blogindex',[PostController::class,'index'])->name('blogs.index');
+Route::post('/blogstored',[PostController::class,'store'])->name('blogs.store');
 

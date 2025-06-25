@@ -11,8 +11,11 @@ class PostController extends Controller
 
     public function index(){
 
+        $blog=Post::all();
 
+        return view('blog.postindex',compact('blog'));
     }
+
     public function create(){
 
         return view('blog.postcreate');
@@ -22,6 +25,11 @@ class PostController extends Controller
     {
 
 
+        //form validation 
+
+
+
+
   // Initialize image name as null
         $fileName = null;
 
@@ -29,7 +37,7 @@ class PostController extends Controller
         if ($request->hasFile('image')) {
             $file     = $request->file('image');
             $fileName = date('YmdHis') . '.' . $file->getClientOriginalExtension();
-            $file->storeAs('blogimage', $fileName, 'public'); // stores to storage/app/public/blogimage
+            $file->storeAs('/bioimage', $fileName, 'public'); // stores to storage/app/public/blogimage
         }
 
        
@@ -41,8 +49,8 @@ class PostController extends Controller
             'image'   => $fileName,
         ]);
 
-        
-      return redirect()->back();   
+
+      return redirect()->route('blogs.index');
     }
    
 
