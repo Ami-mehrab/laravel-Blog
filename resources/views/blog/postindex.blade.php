@@ -14,84 +14,85 @@
             background-color: #f8f9fa;
         }
 
-        .post-container {
-            max-width: 800px;
+        .table-container {
+            max-width: 1000px;
             margin: 40px auto;
-            padding: 30px;
             background: white;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
-        .post-header {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+        .table img {
+            max-height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
         }
 
-        .post-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .post-content {
-            margin-bottom: 20px;
-        }
-
-        .post-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .action-buttons .btn {
+            margin-right: 5px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="post-container">
-            <div class="post-header">
+        <div class="table-container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2><i class="fas fa-blog me-2"></i>Blog Posts</h2>
+                <a href="{{ route('blogs.create') }}" class="btn btn-success">
+                  <i class="fas fa-plus me-1"></i> Create New Post
+                </a>
+                
             </div>
 
-            @foreach($blog as $blogs)
-            <div class="post">
-                <div class="post">
-                    @if($blogs->image)
-                    <div class="mb-3 text-center">
-                        <img src="{{('storage/blogimage/'.$blogs->image) }}" alt="Post Image" class="img-fluid rounded" style="max-height: 300px; object-fit: cover;">
-                    </div>
-                    @endif
-                    <h3 class="post-title">{{ $blogs->title }}</h3>
-                    <p class="post-content">{{ Str::limit($blogs->content, 150) }}</p>
-                    <div class="post-footer">
-                        <div class="post-footer">
-                            <a href="" class="btn btn-primary">
-                                <i class="fas fa-eye me-1"></i> Read More
+            <table class="table table-bordered table-striped table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Excerpt</th>
+                        <th scope="col">Created At</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($blog as $blogs)
+                    <tr>
+                        <td class="text-center">
+                            @if($blogs->image)
+                                <img src="{{ asset('storage/blogimage/'.$blogs->image) }}" alt="Blog Image" class="img-fluid">
+                            @else
+                                <span class="text-muted">No Image</span>
+                            @endif
+                        </td>
+                        <td>{{ $blogs->title }}</td>
+                        <td>{{ Str::limit($blogs->content, 50) }}</td>
+                        <td>{{ $blogs->created_at->format('F j, Y') }}</td>
+                        <td class="action-buttons">
+                            <a href="" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye me-1"></i> Read
                             </a>
-
-                        </div>
-                        <div>
-
-                            <a href="{{Route('blogs.destroy',$blogs->id)}}" class="">
-                                <button type="submit" class="btn btn-danger">
+                            <a href="" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit me-1"></i> Edit
+                            </a>
+                           <a href="{{Route('blogs.delete',$blogs->id)}}" >
+                             
+                                <button type="submit" class="btn btn-danger btn-sm" onsubmit="return confirm('Are you sure you want to delete this post?');">
                                     <i class="fas fa-trash me-1"></i> Delete
                                 </button>
-                            </a>
-                        </div>
+                           </a>
+                        </td>
+                    </tr>
+                    @endforeach
 
-                        <span class="text-muted">{{ $blogs->created_at->format('F j, Y') }}</span>
-                    </div>
-                </div>
-
-                <hr>
-                @endforeach
-
-                <div class="d-flex justify-content-between">
-                    <a href="{{ route('blogs.create') }}" class="btn btn-success">
-                        <i class="fas fa-plus me-1"></i> Create New Post
-                    </a>
-                </div>
-            </div>
+                    @if($blog->isEmpty())
+                    <tr>
+                        <td colspan="5" class="text-center text-muted">No blog posts available.</td>
+                    </tr>
+                    @endif
+                </tbody>
+            </table>
         </div>
     </div>
 

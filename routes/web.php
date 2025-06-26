@@ -20,5 +20,5 @@ Route::get('/blogindex',[PostController::class,'index'])->name('blogs.index');
 Route::post('/blogstored',[PostController::class,'store'])->name('blogs.store');
 
 
-Route::get('/blogs/{id}', [PostController::class, 'destroy'])->name('blogs.destroy');
+Route::get('/blogs/{id}', [PostController::class, 'delete'])->name('blogs.delete');
 

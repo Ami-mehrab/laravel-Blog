@@ -1,3 +1,17 @@
+<style>
+	.blog-card {
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	.blog-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	}
+	.blog-card .card-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+</style>
+
 <!doctype html>
 <html lang="en">
 
@@ -224,15 +238,50 @@
 				</div>
 
 
-			<!-- blog content -->
+				<!-- blog content -->
 
 				<div class="row justify-content-center" id="blog-content">
-
-					<!-- Dynamic blog posts will be injected here from DB -->
-					
+	<!-- Blog Card Start -->
+	<!-- <div class="col-lg-4 col-md-6 mb-5">
+		<div class="card blog-card shadow-sm h-100">
+			<img class="card-img-top" src="images/blog/1.jpg" alt="Blog image">
+			<div class="card-body d-flex flex-column">
+				<span class="badge badge-info mb-2">Design</span>
+				<h5 class="card-title mb-3">How to improve design with typography?</h5>
+				<p class="card-text text-muted small">Typography plays a critical role in design. Learn how to use it to enhance readability and aesthetics.</p>
+				<div class="mt-auto">
+					<a href="blog-single.html" class="btn btn-outline-primary btn-sm">Read More</a>
 				</div>
+			</div>
+			<div class="card-footer bg-white border-top-0 small text-muted">
+				<i class="fa fa-user mr-1"></i> Admin &nbsp;|&nbsp;
+				<i class="fa fa-calendar mr-1"></i> June 20, 2025
+			</div>
+		</div>
+	</div> -->
+	</div>
 
-				
+	<!-- Blog Card Start -->
+	<!-- <div class="col-lg-4 col-md-6 mb-5">
+		<div class="card blog-card shadow-sm h-100">
+			<img class="card-img-top" src="images/blog/1.jpg" alt="Blog image">
+			<div class="card-body d-flex flex-column">
+				<span class="badge badge-info mb-2">Design</span>
+				<h5 class="card-title mb-3">How to improve design with typography?</h5>
+				<p class="card-text text-muted small">Typography plays a critical role in design. Learn how to use it to enhance readability and aesthetics.</p>
+				<div class="mt-auto">
+					<a href="blog-single.html" class="btn btn-outline-primary btn-sm">Read More</a>
+				</div>
+			</div>
+			<div class="card-footer bg-white border-top-0 small text-muted">
+				<i class="fa fa-user mr-1"></i> Admin &nbsp;|&nbsp;
+				<i class="fa fa-calendar mr-1"></i> June 20, 2025
+			</div>
+		</div>
+	</div> -->
+	<!-- Blog Card End -->
+
+
 
 				<div class="row justify-content-center">
 					<div class="col-lg-4 col-md-6 mb-5">

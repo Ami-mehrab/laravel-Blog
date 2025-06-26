@@ -49,15 +49,16 @@ class PostController extends Controller
             'content' => $request->content,
             'image'   => $fileName,
         ]);
+        // dd($request->all());
          toastr()->success('A BlogPost has been created successfully.');
 
       return redirect()->route('blogs.index');
 
     }
 
-   
-    public function destroy($id){
+    public function delete($id){
      Post::find($id)->delete();
+
 
     return redirect()->route('blogs.index');
 
