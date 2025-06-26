@@ -58,15 +58,27 @@
                 <div class="post">
                     @if($blogs->image)
                     <div class="mb-3 text-center">
-                        <img src="{{('storage/bioimage/'.$blogs->image) }}" alt="Post Image" class="img-fluid rounded" style="max-height: 300px; object-fit: cover;">
+                        <img src="{{('storage/blogimage/'.$blogs->image) }}" alt="Post Image" class="img-fluid rounded" style="max-height: 300px; object-fit: cover;">
                     </div>
                     @endif
                     <h3 class="post-title">{{ $blogs->title }}</h3>
                     <p class="post-content">{{ Str::limit($blogs->content, 150) }}</p>
                     <div class="post-footer">
-                        <a href="" class="btn btn-primary">
-                            <i class="fas fa-eye me-1"></i> Read More
-                        </a>
+                        <div class="post-footer">
+                            <a href="" class="btn btn-primary">
+                                <i class="fas fa-eye me-1"></i> Read More
+                            </a>
+
+                        </div>
+                        <div>
+
+                            <a href="{{Route('blogs.destroy',$blogs->id)}}" class="">
+                                <button type="submit" class="btn btn-danger">
+                                    <i class="fas fa-trash me-1"></i> Delete
+                                </button>
+                            </a>
+                        </div>
+
                         <span class="text-muted">{{ $blogs->created_at->format('F j, Y') }}</span>
                     </div>
                 </div>
@@ -83,8 +95,8 @@
         </div>
     </div>
 
-        <!-- Bootstrap JS Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

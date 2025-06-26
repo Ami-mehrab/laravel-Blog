@@ -34,10 +34,11 @@ class PostController extends Controller
         $fileName = null;
 
         // logic for image upload
+
         if ($request->hasFile('image')) {
             $file     = $request->file('image');
             $fileName = date('YmdHis') . '.' . $file->getClientOriginalExtension();
-            $file->storeAs('/bioimage', $fileName, 'public'); // stores to storage/app/public/blogimage
+            $file->storeAs('/blogimage', $fileName, 'public'); // stores to storage/app/public/blogimage
         }
 
        
@@ -48,11 +49,19 @@ class PostController extends Controller
             'content' => $request->content,
             'image'   => $fileName,
         ]);
-
+         toastr()->success('A BlogPost has been created successfully.');
 
       return redirect()->route('blogs.index');
-    }
-   
 
- 
+    }
+
+   
+    public function destroy($id){
+     Post::find($id)->delete();
+
+    return redirect()->route('blogs.index');
+
+
+}
+
 }

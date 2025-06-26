@@ -1,314 +1,325 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="megakit,business,company,agency,multipurpose,modern,bootstrap4">
-  
-  <meta name="author" content="themefisher.com">
 
-  <title>Blog template </title>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="megakit,business,company,agency,multipurpose,modern,bootstrap4">
 
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Icon Font Css -->
-  <link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/fontawesome/css/all.css">
-  <link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/magnific-popup/dist/magnific-popup.css">
-  <link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/magnific-popup/dist/magnific-popup.css">
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/slick-carousel/slick/slick-theme.css">
+	<meta name="author" content="themefisher.com">
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="https://themewagon.github.io/megakit-2/css/style.css">
+	<title>Blog template </title>
+
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/bootstrap/css/bootstrap.min.css">
+	<!-- Icon Font Css -->
+	<link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/fontawesome/css/all.css">
+	<link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/magnific-popup/dist/magnific-popup.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="https://themewagon.github.io/megakit-2/plugins/slick-carousel/slick/slick-theme.css">
+
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="https://themewagon.github.io/megakit-2/css/style.css">
 
 </head>
 
 <body>
 
 
-<!-- Header Start --> 
+	<!-- Header Start -->
 
-@include ('fixed.header')
+	@include ('fixed.header')
 
-<!-- Header Close --> 
+	<!-- Header Close -->
 
-<div class="main-wrapper ">
-<!-- Slider Start -->
-<section class="slider">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9 col-md-10">
-				<div class="block">
-					<span class="d-block mb-3 text-white text-capitalize">Prepare for new future</span>
-					<h1 class="animated fadeInUp mb-5">Our work is <br>presentation of our <br>capabilities.</h1>
-					<a href="#" target="_blank" class="btn btn-main animated fadeInUp btn-round-full" >Get started<i class="btn-icon fa fa-angle-right ml-2"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Section Intro Start -->
-
-<section class="section intro">
-	<div class="container">
-		<div class="row ">
-			<div class="col-lg-8">
-				<div class="section-title">
-					<span class="h6 text-color ">We are creative & expert people</span>
-					<h2 class="mt-3 content-title">We work with business & provide solution to client with their business problem </h2>
-				</div>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-lg-4 col-md-6 col-12">
-				<div class="intro-item mb-5 mb-lg-0"> 
-					<i class="ti-desktop color-one"></i>
-					<h4 class="mt-4 mb-3">Modern & Responsive design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="intro-item mb-5 mb-lg-0">
-					<i class="ti-medall color-one"></i> 
-					<h4 class="mt-4 mb-3">Awarded licensed company</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="intro-item">
-					<i class="ti-layers-alt color-one"></i>
-					<h4 class="mt-4 mb-3">Build your website Professionally</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
-				</div>
-			</div> 
-		</div>
-	</div>
-</section>
-
-<!-- Section Intro END -->
-<!-- Section About Start -->
-
-
-
-<!-- Section About End -->
-<!-- section Counter Start -->
-<section class="section counter">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="counter-item text-center mb-5 mb-lg-0">
-					<h3 class="mb-0"><span class="counter-stat font-weight-bold">1730</span> +</h3>
-					<p class="text-muted">Project Done</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="counter-item text-center mb-5 mb-lg-0">
-					<h3 class="mb-0"><span class="counter-stat font-weight-bold">125 </span>M </h3>
-					<p class="text-muted">User Worldwide</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="counter-item text-center mb-5 mb-lg-0">
-					<h3 class="mb-0"><span class="counter-stat font-weight-bold">39</span></h3>
-					<p class="text-muted">Availble Country</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="counter-item text-center">
-					<h3 class="mb-0"><span class="counter-stat font-weight-bold">14</span></h3>
-					<p class="text-muted">Award Winner </p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- section Counter End  -->
-<!--  Section Services Start -->
-
-<!--  Section Services End -->
- <!-- Section Cta Start --> 
-<section class="section cta">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-5">
-				<div class="cta-item  bg-white p-5 rounded">
-					<span class="h6 text-color">We create for you</span>
-					<h2 class="mt-2 mb-4">Entrust Your Project to Our Best Team of Professionals</h2>
-					<p class="lead mb-4">Have any project on mind? For immidiate support :</p>
-					<h3><i class="ti-mobile mr-3 text-color"></i>+23 876 65 455</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--  Section Cta End-->
-<!-- Section Testimonial Start -->
-<section class="section testimonial">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7 ">
-				<div class="section-title">
-					<span class="h6 text-color">Clients testimonial</span>
-					<h2 class="mt-3 content-title">Check what's our clients say about us</h2>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row testimonial-wrap">
-			<div class="testimonial-item position-relative">
-				<i class="ti-quote-left text-color"></i>
-
-				<div class="testimonial-item-content">
-					<p class="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti facilis blanditiis.</p>
-
-					<div class="testimonial-author">
-						<h5 class="mb-0 text-capitalize">Thomas Johnson</h5>
-						<p>Excutive Director,themefisher</p>
+	<div class="main-wrapper ">
+		<!-- Slider Start -->
+		<section class="slider">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-10">
+						<div class="block">
+							<span class="d-block mb-3 text-white text-capitalize">Prepare for new future</span>
+							<h1 class="animated fadeInUp mb-5">Our work is <br>presentation of our <br>capabilities.</h1>
+							<a href="#" target="_blank" class="btn btn-main animated fadeInUp btn-round-full">Get started<i class="btn-icon fa fa-angle-right ml-2"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="testimonial-item position-relative">
-				<i class="ti-quote-left text-color"></i>
+		</section>
+		<!-- Section Intro Start -->
 
-				<div class="testimonial-item-content">
-					<p class="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae .</p>
-
-					<div class="testimonial-author">
-						<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
-						<p>Excutive Director,themefisher</p>
+		<section class="section intro">
+			<div class="container">
+				<div class="row ">
+					<div class="col-lg-8">
+						<div class="section-title">
+							<span class="h6 text-color ">We are creative & expert people</span>
+							<h2 class="mt-3 content-title">We work with business & provide solution to client with their business problem </h2>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="intro-item mb-5 mb-lg-0">
+							<i class="ti-desktop color-one"></i>
+							<h4 class="mt-4 mb-3">Modern & Responsive design</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="intro-item mb-5 mb-lg-0">
+							<i class="ti-medall color-one"></i>
+							<h4 class="mt-4 mb-3">Awarded licensed company</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="intro-item">
+							<i class="ti-layers-alt color-one"></i>
+							<h4 class="mt-4 mb-3">Build your website Professionally</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="testimonial-item position-relative">
-				<i class="ti-quote-left text-color"></i>
+		</section>
 
-				<div class="testimonial-item-content">
-					<p class="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti.</p>
+		<!-- Section Intro END -->
+		<!-- Section About Start -->
 
-					<div class="testimonial-author">
-						<h5 class="mb-0 text-capitalize">James Watson</h5>
-						<p>Excutive Director,themefisher</p>
+
+
+		<!-- Section About End -->
+		<!-- section Counter Start -->
+		<section class="section counter">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter-item text-center mb-5 mb-lg-0">
+							<h3 class="mb-0"><span class="counter-stat font-weight-bold">1730</span> +</h3>
+							<p class="text-muted">Project Done</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter-item text-center mb-5 mb-lg-0">
+							<h3 class="mb-0"><span class="counter-stat font-weight-bold">125 </span>M </h3>
+							<p class="text-muted">User Worldwide</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter-item text-center mb-5 mb-lg-0">
+							<h3 class="mb-0"><span class="counter-stat font-weight-bold">39</span></h3>
+							<p class="text-muted">Availble Country</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter-item text-center">
+							<h3 class="mb-0"><span class="counter-stat font-weight-bold">14</span></h3>
+							<p class="text-muted">Award Winner </p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="testimonial-item position-relative">
-				<i class="ti-quote-left text-color"></i>
+		</section>
+		<!-- section Counter End  -->
+		<!--  Section Services Start -->
 
-				<div class="testimonial-item-content">
-					<p class="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae .</p>
-
-					<div class="testimonial-author">
-						<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
-						<p>Excutive Director,themefisher</p>
+		<!--  Section Services End -->
+		<!-- Section Cta Start -->
+		<section class="section cta">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="cta-item  bg-white p-5 rounded">
+							<span class="h6 text-color">We create for you</span>
+							<h2 class="mt-2 mb-4">Entrust Your Project to Our Best Team of Professionals</h2>
+							<p class="lead mb-4">Have any project on mind? For immidiate support :</p>
+							<h3><i class="ti-mobile mr-3 text-color"></i>+23 876 65 455</h3>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<!-- Section Testimonial End -->
-<section class="section latest-blog bg-2">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-7 text-center">
-				<div class="section-title">
-					<span class="h6 text-color">Latest News</span>
-					<h2 class="mt-3 content-title text-white">Latest articles to enrich knowledge</h2>
-				</div>
-			</div>
-		</div>
-
-		<div class="row justify-content-center">
-			<div class="col-lg-4 col-md-6 mb-5">
-				<div class="card bg-transparent border-0">
-					<img src="images/blog/1.jpg" alt="" class="img-fluid rounded">
-
-					<div class="card-body mt-2">
-						<div class="blog-item-meta">
-							<a href="#" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
-							<a href="#"  class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
-							<a href="#" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
-						</div> 
-
-						<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white ">How to improve design with typography?</a></h3>
-
-						<a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
+		</section>
+		<!--  Section Cta End-->
+		<!-- Section Testimonial Start -->
+		<section class="section testimonial">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 ">
+						<div class="section-title">
+							<span class="h6 text-color">Clients testimonial</span>
+							<h2 class="mt-3 content-title">Check what's our clients say about us</h2>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-6 mb-5">
-				<div class="card border-0 bg-transparent">
-					<img src="images/blog/2.jpg" alt="" class="img-fluid rounded">
+			<div class="container">
+				<div class="row testimonial-wrap">
+					<div class="testimonial-item position-relative">
+						<i class="ti-quote-left text-color"></i>
 
-					<div class="card-body mt-2">
-						<div class="blog-item-meta">
-							<a href="#" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
-							<a href="#"  class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
-							<a href="#" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
-						</div>  
+						<div class="testimonial-item-content">
+							<p class="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti facilis blanditiis.</p>
 
-						<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white">Interactivity design may connect consumer</a></h3>
+							<div class="testimonial-author">
+								<h5 class="mb-0 text-capitalize">Thomas Johnson</h5>
+								<p>Excutive Director,themefisher</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-item position-relative">
+						<i class="ti-quote-left text-color"></i>
 
-						<a href="" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
+						<div class="testimonial-item-content">
+							<p class="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae .</p>
+
+							<div class="testimonial-author">
+								<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
+								<p>Excutive Director,themefisher</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-item position-relative">
+						<i class="ti-quote-left text-color"></i>
+
+						<div class="testimonial-item-content">
+							<p class="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti.</p>
+
+							<div class="testimonial-author">
+								<h5 class="mb-0 text-capitalize">James Watson</h5>
+								<p>Excutive Director,themefisher</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-item position-relative">
+						<i class="ti-quote-left text-color"></i>
+
+						<div class="testimonial-item-content">
+							<p class="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae .</p>
+
+							<div class="testimonial-author">
+								<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
+								<p>Excutive Director,themefisher</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Section Testimonial End -->
+		<section class="section latest-blog bg-2">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 text-center">
+						<div class="section-title">
+							<span class="h6 text-color">Latest News</span>
+							<h2 class="mt-3 content-title text-white">Latest articles to enrich knowledge</h2>
+						</div>
+					</div>
+				</div>
+
+
+			<!-- blog content -->
+
+				<div class="row justify-content-center" id="blog-content">
+
+					<!-- Dynamic blog posts will be injected here from DB -->
+					
+				</div>
+
+				
+
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 mb-5">
+						<div class="card bg-transparent border-0">
+							<img src="images/blog/1.jpg" alt="" class="img-fluid rounded">
+
+							<div class="card-body mt-2">
+								<div class="blog-item-meta">
+									<a href="#" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
+									<a href="#" class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
+									<a href="#" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
+								</div>
+
+								<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white ">How to improve design with typography?</a></h3>
+
+								<a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 mb-5">
+						<div class="card border-0 bg-transparent">
+							<img src="images/blog/2.jpg" alt="" class="img-fluid rounded">
+
+							<div class="card-body mt-2">
+								<div class="blog-item-meta">
+									<a href="#" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
+									<a href="#" class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
+									<a href="#" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
+								</div>
+
+								<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white">Interactivity design may connect consumer</a></h3>
+
+								<a href="" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-70 position-relative">
+			<div class="container">
+				<div class="cta-block-2 bg-gray p-5 rounded border-1">
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-7">
+							<span class="text-color">For Every type business</span>
+							<h2 class="mt-2 mb-4 mb-lg-0">Entrust Your Project to Our Best Team of Professionals</h2>
+						</div>
+
 					</div>
 				</div>
 			</div>
 
-		</div>
+		</section>
+
+		<!-- footer Start -->
+
+		@include('fixed.footer')
 	</div>
-</section>
 
-<section class="mt-70 position-relative">
-	<div class="container">
-	<div class="cta-block-2 bg-gray p-5 rounded border-1">
-		<div class="row justify-content-center align-items-center ">
-			<div class="col-lg-7">
-				<span class="text-color">For Every type business</span>
-				<h2 class="mt-2 mb-4 mb-lg-0">Entrust Your Project to Our Best Team of Professionals</h2>
-			</div>
-			
-		</div>
-	</div>
-</div>
-
-</section>
-
-<!-- footer Start -->
-
- @include('fixed.footer')
-    </div>
-
-    <!-- 
+	<!-- 
     Essential Scripts
     =====================================-->
 
-    
-    <!-- Main jQuery -->
-    <script src="https://themewagon.github.io/megakit-2/plugins/jquery/jquery.js"></script>
-    <script src="js/contact.js"></script>
-    <!-- Bootstrap 4.3.1 -->
-    <script src="https://themewagon.github.io/megakit-2/plugins/bootstrap/js/popper.js"></script>
-    <script src="https://themewagon.github.io/megakit-2/plugins/bootstrap/js/bootstrap.min.js"></script>
-   <!--  Magnific Popup-->
-    <script src="https://themewagon.github.io/megakit-2/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="https://themewagon.github.io/megakit-2/plugins/slick-carousel/slick/slick.min.js"></script>
-    <!-- Counterup -->
-    <script src="https://themewagon.github.io/megakit-2/plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="https://themewagon.github.io/megakit-2/plugins/counterup/jquery.counterup.min.js"></script>
 
-    <!-- Google Map -->
-    <script src="https://themewagon.github.io/megakit-2/plugins/google-map/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
-    
-    <script src="https://themewagon.github.io/megakit-2/js/script.js"></script>
+	<!-- Main jQuery -->
+	<script src="https://themewagon.github.io/megakit-2/plugins/jquery/jquery.js"></script>
+	<script src="js/contact.js"></script>
+	<!-- Bootstrap 4.3.1 -->
+	<script src="https://themewagon.github.io/megakit-2/plugins/bootstrap/js/popper.js"></script>
+	<script src="https://themewagon.github.io/megakit-2/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--  Magnific Popup-->
+	<script src="https://themewagon.github.io/megakit-2/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<!-- Slick Slider -->
+	<script src="https://themewagon.github.io/megakit-2/plugins/slick-carousel/slick/slick.min.js"></script>
+	<!-- Counterup -->
+	<script src="https://themewagon.github.io/megakit-2/plugins/counterup/jquery.waypoints.min.js"></script>
+	<script src="https://themewagon.github.io/megakit-2/plugins/counterup/jquery.counterup.min.js"></script>
 
-  </body>
-  </html>
-   
+	<!-- Google Map -->
+	<script src="https://themewagon.github.io/megakit-2/plugins/google-map/map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+
+	<script src="https://themewagon.github.io/megakit-2/js/script.js"></script>
+
+</body>
+
+</html>
