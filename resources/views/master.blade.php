@@ -1,16 +1,41 @@
 <style>
 	.blog-card {
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		min-width: 300px;
+		margin-right: 20px;
 	}
+
 	.blog-card:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 	}
-	.blog-card .card-title {
+
+	.blog-horizontal-scroll {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		padding-bottom: 15px;
+	}
+
+	.blog-horizontal-scroll::-webkit-scrollbar {
+		height: 8px;
+	}
+
+	.blog-horizontal-scroll::-webkit-scrollbar-thumb {
+		background-color: #ccc;
+		border-radius: 4px;
+	}
+
+	.blog-horizontal-scroll>.card {
+		scroll-snap-align: start;
+	}
+
+	.card-title {
 		font-size: 1.25rem;
 		font-weight: 600;
 	}
 </style>
+
 
 <!doctype html>
 <html lang="en">
@@ -103,11 +128,44 @@
 		</section>
 
 		<!-- Section Intro END -->
-		<!-- Section About Start -->
+
+	
+			
+				<div class="row justify-content-center" id="blog-content">
+					<div class="row justify-content-center">
+						<div class="col-12">
+							<div class="blog-horizontal-scroll">
+
+									@foreach($blog as $blogs)
+								<!-- Blog Card 1 -->
+								<div class="card blog-card shadow-sm h-100">
+									<img class="card-img-top" src="{{ asset('storage/blogimage/'.$blogs->image) }}" alt="Blog image">
+									<div class="card-body d-flex flex-column">
+										<!-- <span class="badge badge-info mb-2">Design</span> -->
+										<h5 class="card-title mb-3">{{$blogs->title}}</h5>
+										<p class="card-text text-muted small">{{ Str::limit($blogs->content, 50) }}</p>
+										<div class="mt-auto">
+											<a href="" class="btn btn-outline-primary btn-sm">Read More</a>
+										</div>
+									</div>
+									
+									<div class="card-footer bg-white border-top-0 small text-muted">
+										<i class="fa fa-user mr-1"></i> Admin 
+										<i class="fa fa-calendar mr-1"></i> June 20, 2025
+									</div>
+								</div>
+								@endforeach
+
+								<!-- Add more blog cards as needed -->
+
+							</div>
+						</div>
+					</div>
 
 
-
-		<!-- Section About End -->
+				</div>
+				
+				
 		<!-- section Counter Start -->
 		<section class="section counter">
 			<div class="container">
@@ -160,7 +218,7 @@
 		</section>
 		<!--  Section Cta End-->
 		<!-- Section Testimonial Start -->
-		<section class="section testimonial">
+		<!-- <section class="section testimonial">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7 ">
@@ -224,7 +282,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- Section Testimonial End -->
 		<section class="section latest-blog bg-2">
 			<div class="container">
@@ -240,87 +298,6 @@
 
 				<!-- blog content -->
 
-				<div class="row justify-content-center" id="blog-content">
-	<!-- Blog Card Start -->
-	<!-- <div class="col-lg-4 col-md-6 mb-5">
-		<div class="card blog-card shadow-sm h-100">
-			<img class="card-img-top" src="images/blog/1.jpg" alt="Blog image">
-			<div class="card-body d-flex flex-column">
-				<span class="badge badge-info mb-2">Design</span>
-				<h5 class="card-title mb-3">How to improve design with typography?</h5>
-				<p class="card-text text-muted small">Typography plays a critical role in design. Learn how to use it to enhance readability and aesthetics.</p>
-				<div class="mt-auto">
-					<a href="blog-single.html" class="btn btn-outline-primary btn-sm">Read More</a>
-				</div>
-			</div>
-			<div class="card-footer bg-white border-top-0 small text-muted">
-				<i class="fa fa-user mr-1"></i> Admin &nbsp;|&nbsp;
-				<i class="fa fa-calendar mr-1"></i> June 20, 2025
-			</div>
-		</div>
-	</div> -->
-	</div>
-
-	<!-- Blog Card Start -->
-	<!-- <div class="col-lg-4 col-md-6 mb-5">
-		<div class="card blog-card shadow-sm h-100">
-			<img class="card-img-top" src="images/blog/1.jpg" alt="Blog image">
-			<div class="card-body d-flex flex-column">
-				<span class="badge badge-info mb-2">Design</span>
-				<h5 class="card-title mb-3">How to improve design with typography?</h5>
-				<p class="card-text text-muted small">Typography plays a critical role in design. Learn how to use it to enhance readability and aesthetics.</p>
-				<div class="mt-auto">
-					<a href="blog-single.html" class="btn btn-outline-primary btn-sm">Read More</a>
-				</div>
-			</div>
-			<div class="card-footer bg-white border-top-0 small text-muted">
-				<i class="fa fa-user mr-1"></i> Admin &nbsp;|&nbsp;
-				<i class="fa fa-calendar mr-1"></i> June 20, 2025
-			</div>
-		</div>
-	</div> -->
-	<!-- Blog Card End -->
-
-
-
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6 mb-5">
-						<div class="card bg-transparent border-0">
-							<img src="images/blog/1.jpg" alt="" class="img-fluid rounded">
-
-							<div class="card-body mt-2">
-								<div class="blog-item-meta">
-									<a href="#" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
-									<a href="#" class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
-									<a href="#" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
-								</div>
-
-								<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white ">How to improve design with typography?</a></h3>
-
-								<a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 mb-5">
-						<div class="card border-0 bg-transparent">
-							<img src="images/blog/2.jpg" alt="" class="img-fluid rounded">
-
-							<div class="card-body mt-2">
-								<div class="blog-item-meta">
-									<a href="#" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
-									<a href="#" class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
-									<a href="#" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
-								</div>
-
-								<h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-white">Interactivity design may connect consumer</a></h3>
-
-								<a href="" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
 			</div>
 		</section>
 

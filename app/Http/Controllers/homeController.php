@@ -9,9 +9,8 @@ class homeController extends Controller
 {
        public function home(){
 
-       
-
-        return view('master');
+       $blog=Post::all();
+        return view('master',compact('blog'));
     }
 
 }

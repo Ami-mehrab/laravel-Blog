@@ -73,7 +73,7 @@
                             <a href="" class="btn btn-primary btn-sm">
                                 <i class="fas fa-eye me-1"></i> Read
                             </a>
-                            <a href="" class="btn btn-warning btn-sm">
+                            <a href="{{Route('blogs.edit',$blogs->id)}}" class="btn btn-warning btn-sm">
                                 <i class="fas fa-edit me-1"></i> Edit
                             </a>
                            <a href="{{Route('blogs.delete',$blogs->id)}}" >
