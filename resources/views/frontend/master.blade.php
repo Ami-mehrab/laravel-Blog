@@ -70,7 +70,7 @@
 
 	<!-- Header Start -->
 
-	@include ('fixed.header')
+	@include ('frontend.fixed.header')
 
 	<!-- Header Close -->
 
@@ -318,7 +318,7 @@
 
 		<!-- footer Start -->
 
-		@include('fixed.footer')
+		@include('frontend.fixed.footer')
 	</div>
 
 	<!-- 

@@ -36,6 +36,29 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Admin Panel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{Route('view.login')}}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="table-container">
             <div class="d-flex justify-content-between align-items-center mb-4">
@@ -43,7 +66,6 @@
                 <a href="{{ route('blogs.create') }}" class="btn btn-success">
                   <i class="fas fa-plus me-1"></i> Create New Post
                 </a>
-                
             </div>
 
             <table class="table table-bordered table-striped table-hover align-middle">
@@ -76,12 +98,11 @@
                             <a href="{{Route('blogs.edit',$blogs->id)}}" class="btn btn-warning btn-sm">
                                 <i class="fas fa-edit me-1"></i> Edit
                             </a>
-                           <a href="{{Route('blogs.delete',$blogs->id)}}" >
-                             
+                            <a href="{{Route('blogs.delete',$blogs->id)}}">
                                 <button type="submit" class="btn btn-danger btn-sm" onsubmit="return confirm('Are you sure you want to delete this post?');">
                                     <i class="fas fa-trash me-1"></i> Delete
                                 </button>
-                           </a>
+                            </a>
                         </td>
                     </tr>
                     @endforeach

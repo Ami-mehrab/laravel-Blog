@@ -13,12 +13,12 @@ class PostController extends Controller
 
         $blog=Post::all();
 
-        return view('blog.postindex',compact('blog'));
+        return view('backend.blog.postindex',compact('blog'));
     }
 
     public function create(){
 
-        return view('blog.postcreate');
+        return view('backend.blog.postcreate');
     }
 
     public function store (Request $request)
@@ -51,7 +51,7 @@ class PostController extends Controller
         ]);
 
         // dd($request->all());
-         toastr()->success('A BlogPost has been created successfully.');
+        //  toastr()->success('A BlogPost has been created successfully.');
 
       return redirect()->route('blogs.index');
 
@@ -69,12 +69,13 @@ public function edit($id){
 
     $blog =Post::findOrFail($id);
 
-    return view('blog.edit',compact('blog'));
+    return view('backend.blog.edit',compact('blog'));
 
 }
 public function update(Request $request,$id){
 
 
+    //best to validate a form for update
 
     $validated =  $request->validate([
         'title' => 'required|string|max:255',
@@ -104,7 +105,7 @@ public function show($id){
 
       $blog=Post::find($id);
 
-    return view('blog.show',compact('blog'));
+    return view('backend.blog.show',compact('blog'));
 }
 
 }

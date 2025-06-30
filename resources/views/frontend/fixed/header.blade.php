@@ -36,7 +36,7 @@
 		
 			  
 			   <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{Route('blogs.index')}}" id="" data-toggle="" aria-haspopup="" aria-expanded="false">Blog</a>
+					<a class="nav-link dropdown-toggle" href="#" id="" data-toggle="" aria-haspopup="" aria-expanded="false">Blog</a>
 					
 
 					</ul>
