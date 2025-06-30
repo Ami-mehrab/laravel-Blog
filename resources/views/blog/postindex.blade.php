@@ -70,7 +70,7 @@
                         <td>{{ Str::limit($blogs->content, 50) }}</td>
                         <td>{{ $blogs->created_at->format('F j, Y') }}</td>
                         <td class="action-buttons">
-                            <a href="" class="btn btn-primary btn-sm">
+                            <a href="{{Route('blogs.show',$blogs->id)}}" class="btn btn-primary btn-sm">
                                 <i class="fas fa-eye me-1"></i> Read
                             </a>
                             <a href="{{Route('blogs.edit',$blogs->id)}}" class="btn btn-warning btn-sm">

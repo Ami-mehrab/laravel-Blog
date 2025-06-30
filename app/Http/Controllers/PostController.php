@@ -83,11 +83,14 @@ public function update(Request $request,$id){
         'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
     ]);
 
+
+
     $blog = Post::findOrFail($id);
-    $blog->fill($validated);         // auto-fill title, slug, content
+    $blog->fill($validated);                 // auto-fill title, slug, content
 
     if ($request->hasFile('image'))
      {
+
         $blog->image = $request->file('image')->store('blogimage', 'public');
     }
 
@@ -96,7 +99,12 @@ public function update(Request $request,$id){
     return redirect()->route('blogs.index')->with('success', 'Post updated successfully!');
 
 
+}
+public function show($id){
 
+      $blog=Post::find($id);
+
+    return view('blog.show',compact('blog'));
 }
 
 }

@@ -10,7 +10,7 @@ class homeController extends Controller
        public function home(){
 
        $blog=Post::all();
-        return view('master',compact('blog'));
+        return view('frontend.master',compact('blog'));
     }
 
 }

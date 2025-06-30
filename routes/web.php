@@ -19,10 +19,15 @@ Route::get('/',[homeController::class,'home'])->name('home');
 Route::get('/blogcreate',[PostController::class,'create'])->name('blogs.create');
 Route::get('/blogindex',[PostController::class,'index'])->name('blogs.index');
 Route::post('/blogstored',[PostController::class,'store'])->name('blogs.store');
-
 Route::get('/blogs/{id}', [PostController::class, 'delete'])->name('blogs.delete');
-
-
 Route::get('/blogs/edit/{id}', [PostController::class, 'edit'])->name('blogs.edit');
 Route::put('/blogs/{id}', [PostController::class, 'update'])->name('blogs.update');
+
+
+Route::get('/blogshow/{id}',[PostController::class,'show'])->name('blogs.show');
+
+
+//route for admin/auth
+
+
 
